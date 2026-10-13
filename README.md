@@ -1,14 +1,18 @@
-# Your Project Name
+# food-security-agent
 
-A starter template for the AI Engineering Buildcamp capstone. Replace this README with a description of your own project.
+A food security analyst assistant that helps analysts understand why food insecurity is changing in a region, built for the AI Engineering Buildcamp capstone.
 
 ## The Problem
 
-Describe the problem your project solves and who has it. One or two sentences.
+Humanitarian analysts, researchers, and development practitioners need to explain why food insecurity is changing in a region. Today that means reading through multiple situation reports, separately checking conflict event data and rainfall trends, and piecing the picture together by hand. It's slow, and it's easy to miss a source or overstate a link between unrelated signals.
 
 ## What It Does
 
-Describe what the AI system does and a typical interaction. What does the user provide? What does the system return?
+An analyst asks a question like "What is driving food insecurity in Bay region this season, and have conflict events or rainfall changed there?" The system retrieves relevant passages from food security reports, calls tools to pull recent conflict events and rainfall anomalies for that region and period, and returns a cited answer.
+
+It separates what the sources state from what the data merely correlates with, and says clearly when evidence is thin, stale, or missing. It will never present a causal claim the data can't support.
+
+The first version is built and tested on Somalia, chosen for its rich public data on both conflict and climate, but country is a parameter in the retrieval and tools, so the same system can be adapted to other countries by pointing it at different reports and regions.
 
 ## Setup
 
